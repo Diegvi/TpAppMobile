@@ -5,77 +5,179 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFCCFF"
     tools:context=".MenuPrincipalActivity">
 
     <ImageButton
-        android:id="@+id/btnInscribirUsuario"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/inscribir"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="207dp" />
-
-    <ImageButton
         android:id="@+id/btnCobrarCuota"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="223dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="428dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnInscribirUsuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pagarcuota"
-        tools:layout_editor_absoluteX="213dp"
-        tools:layout_editor_absoluteY="207dp" />
+        android:hint="Cobrarcuota"/>
+
+
+    <TextView
+        android:id="@+id/txtCobrarCuotas"
+        android:layout_width="75dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="99dp"
+        android:text="Cobrar Cuota"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtInscribirUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtInscribirUsuario"
+        app:layout_constraintTop_toTopOf="@+id/txtInscribirUsuario" />
 
     <ImageButton
         android:id="@+id/btnCobrarActividad"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="397dp"
+        android:layout_marginBottom="238dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pagaractividad"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="399dp" />
+        android:hint="Cobraractividad"/>
+
+
+    <TextView
+        android:id="@+id/txtVerCuotas"
+        android:layout_width="75dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="99dp"
+        android:text="Ver Cuotas"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCobrarActividad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtCobrarActividad"
+        app:layout_constraintTop_toTopOf="@+id/txtCobrarActividad" />
 
     <ImageButton
         android:id="@+id/btnVerCuotas"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="223dp"
+        android:layout_marginTop="397dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="238dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCobrarActividad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/vercuotas"
-        tools:layout_editor_absoluteX="213dp"
-        tools:layout_editor_absoluteY="399dp" />
+        android:hint="Vercuotas"/>
+
+
+    <TextView
+        android:id="@+id/txtCobrarActividad"
+        android:layout_width="75dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="194dp"
+        android:text="Cobrar Actividad"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInscribirUsuario" />
+
+    <ImageButton
+        android:id="@+id/btnInscribirUsuario"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginBottom="428dp"
+        app:circularflow_radiusInDP="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/inscribir"
+        android:hint="Inscribirusuario"/>
+
+
+
+    <TextView
+        android:id="@+id/txtInscribirUsuario"
+        android:layout_width="75dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="150dp"
+        android:text="Inscribir Usuario"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtCobrarActividad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloMP" />
 
     <TextView
         android:id="@+id/txtTituloMP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:layout_marginBottom="200dp"
         android:text="Menú Principal"
-        tools:layout_editor_absoluteX="173dp"
-        tools:layout_editor_absoluteY="70dp" />
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtInscribirUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/txtVerCuotas"
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Inscribir Usuario"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="307dp" />
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/txtVerCuotas"
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/layer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cobrar Cuota"
-        tools:layout_editor_absoluteX="221dp"
-        tools:layout_editor_absoluteY="309dp" />
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/txtVerCuotas"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cobrar Actividad"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="499dp" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
 
-    <TextView
-        android:id="@+id/txtVerCuotas"
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ver Cuotas"
-        tools:layout_editor_absoluteX="235dp"
-        tools:layout_editor_absoluteY="502dp" />
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
